@@ -1,0 +1,29 @@
+
+      <!DOCTYPE html>
+      <html lang="ja">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+      </head>
+      <body>
+      <pre class="shiki" style="background-color: #ffffff"><code>
+<span style="color: #24292EFF">      </span><span style="color: #D32F2F">import</span><span style="color: #24292EFF"> React, { LabelHTMLAttributes } </span><span style="color: #D32F2F">from</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"react"</span><span style="color: #24292EFF">;</span>
+<span style="color: #24292EFF">      </span><span style="color: #D32F2F">import</span><span style="color: #24292EFF"> styled </span><span style="color: #D32F2F">from</span><span style="color: #24292EFF"> </span><span style="color: #22863A">"styled-components"</span><span style="color: #24292EFF">;</span>
+<span style="color: #24292EFF">      </span>
+<span style="color: #24292EFF">      </span><span style="color: #D32F2F">type</span><span style="color: #24292EFF"> </span><span style="color: #6F42C1">Props</span><span style="color: #24292EFF"> </span><span style="color: #D32F2F">=</span><span style="color: #24292EFF"> </span><span style="color: #6F42C1">LabelHTMLAttributes</span><span style="color: #24292EFF">&lt;</span><span style="color: #6F42C1">HTMLLabelElement</span><span style="color: #24292EFF">&gt; </span><span style="color: #D32F2F">&</span><span style="color: #24292EFF"> {</span>
+<span style="color: #24292EFF">        className</span><span style="color: #D32F2F">?:</span><span style="color: #24292EFF"> </span><span style="color: #1976D2">string</span><span style="color: #24292EFF">;</span>
+<span style="color: #24292EFF">      };</span>
+<span style="color: #24292EFF">      </span>
+<span style="color: #24292EFF">      </span><span style="color: #D32F2F">const</span><span style="color: #24292EFF"> Component</span><span style="color: #D32F2F">:</span><span style="color: #24292EFF"> </span><span style="color: #6F42C1">React</span><span style="color: #24292EFF">.</span><span style="color: #6F42C1">FC</span><span style="color: #24292EFF">&lt;</span><span style="color: #6F42C1">Props</span><span style="color: #24292EFF">&gt; </span><span style="color: #D32F2F">=</span><span style="color: #24292EFF"> (props) </span><span style="color: #D32F2F">=&gt;</span><span style="color: #24292EFF"> {</span>
+<span style="color: #24292EFF">        </span><span style="color: #D32F2F">const</span><span style="color: #24292EFF"> { children, htmlFor, className } </span><span style="color: #D32F2F">=</span><span style="color: #24292EFF"> props;</span>
+<span style="color: #24292EFF">        </span><span style="color: #D32F2F">return</span><span style="color: #24292EFF"> (</span>
+<span style="color: #24292EFF">          &lt;</span><span style="color: #22863A">label</span><span style="color: #24292EFF"> </span><span style="color: #6F42C1">htmlFor</span><span style="color: #D32F2F">=</span><span style="color: #24292EFF">{htmlFor} </span><span style="color: #6F42C1">className</span><span style="color: #D32F2F">=</span><span style="color: #24292EFF">{className}&gt;</span>
+<span style="color: #24292EFF">            {children}</span>
+<span style="color: #24292EFF">          &lt;/</span><span style="color: #22863A">label</span><span style="color: #24292EFF">&gt;</span>
+<span style="color: #24292EFF">        );</span>
+<span style="color: #24292EFF">      };</span>
+<span style="color: #24292EFF">    </span></code></pre>
+      </body>
+      </html>
+    

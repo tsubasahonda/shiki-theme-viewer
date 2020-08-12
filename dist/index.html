@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <pre class="shiki" style="background-color: #2e3440"><code>
+    <span style="color: #D8DEE9FF">      </span><span style="color: #81A1C1">import</span><span style="color: #D8DEE9FF"> </span><span style="color: #8FBCBB">React</span><span style="color: #ECEFF4">,</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span><span style="color: #D8DEE9FF"> </span><span style="color: #8FBCBB">LabelHTMLAttributes</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">}</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">from</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">"</span><span style="color: #A3BE8C">react</span><span style="color: #ECEFF4">"</span><span style="color: #81A1C1">;</span>
+    <span style="color: #D8DEE9FF">      </span><span style="color: #81A1C1">import</span><span style="color: #D8DEE9FF"> </span><span style="color: #8FBCBB">styled</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">from</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">"</span><span style="color: #A3BE8C">styled-components</span><span style="color: #ECEFF4">"</span><span style="color: #81A1C1">;</span>
+    <span style="color: #D8DEE9FF">      </span>
+    <span style="color: #D8DEE9FF">      </span><span style="color: #81A1C1">type</span><span style="color: #D8DEE9FF"> Props </span><span style="color: #81A1C1">=</span><span style="color: #D8DEE9FF"> LabelHTMLAttributes</span><span style="color: #ECEFF4">&lt;</span><span style="color: #D8DEE9FF">HTMLLabelElement</span><span style="color: #ECEFF4">&gt;</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">&</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span>
+    <span style="color: #D8DEE9FF">        className</span><span style="color: #81A1C1">?:</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">string;</span>
+    <span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">}</span><span style="color: #81A1C1">;</span>
+    <span style="color: #D8DEE9FF">      </span>
+    <span style="color: #D8DEE9FF">      </span><span style="color: #81A1C1">const</span><span style="color: #D8DEE9FF"> </span><span style="color: #D8DEE9">Component</span><span style="color: #81A1C1">:</span><span style="color: #D8DEE9FF"> React</span><span style="color: #ECEFF4">.</span><span style="color: #D8DEE9FF">FC</span><span style="color: #ECEFF4">&lt;</span><span style="color: #D8DEE9FF">Props</span><span style="color: #ECEFF4">&gt;</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">=</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">(</span><span style="color: #D8DEE9">props</span><span style="color: #ECEFF4">)</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">=&gt;</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span>
+    <span style="color: #D8DEE9FF">        </span><span style="color: #81A1C1">const</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">{</span><span style="color: #D8DEE9FF"> </span><span style="color: #D8DEE9">children</span><span style="color: #ECEFF4">,</span><span style="color: #D8DEE9FF"> </span><span style="color: #D8DEE9">htmlFor</span><span style="color: #ECEFF4">,</span><span style="color: #D8DEE9FF"> </span><span style="color: #D8DEE9">className</span><span style="color: #D8DEE9FF"> </span><span style="color: #ECEFF4">}</span><span style="color: #D8DEE9FF"> </span><span style="color: #81A1C1">=</span><span style="color: #D8DEE9FF"> </span><span style="color: #D8DEE9">props</span><span style="color: #81A1C1">;</span>
+    <span style="color: #D8DEE9FF">        </span><span style="color: #81A1C1">return</span><span style="color: #D8DEE9FF"> (</span>
+    <span style="color: #D8DEE9FF">          </span><span style="color: #81A1C1">&lt;label</span><span style="color: #D8DEE9FF"> </span><span style="color: #8FBCBB">htmlFor</span><span style="color: #81A1C1">={</span><span style="color: #D8DEE9">htmlFor</span><span style="color: #81A1C1">}</span><span style="color: #D8DEE9FF"> </span><span style="color: #8FBCBB">className</span><span style="color: #81A1C1">={</span><span style="color: #D8DEE9">className</span><span style="color: #81A1C1">}&gt;</span>
+    <span style="color: #D8DEE9FF">            </span><span style="color: #81A1C1">{</span><span style="color: #D8DEE9">children</span><span style="color: #81A1C1">}</span>
+    <span style="color: #D8DEE9FF">          </span><span style="color: #81A1C1">&lt;/label&gt;</span>
+    <span style="color: #D8DEE9FF">        )</span><span style="color: #81A1C1">;</span>
+    <span style="color: #D8DEE9FF">      </span><span style="color: #ECEFF4">}</span><span style="color: #81A1C1">;</span>
+    <span style="color: #D8DEE9FF">    </span></code></pre>
+</body>
+</html>
