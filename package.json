@@ -8,7 +8,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "generate": "ts-node scripts/generateShikiTemplates.ts"
+    "generate": "ts-node scripts/generateShikiTemplates.ts",
+    "start": "yarn generate && yarn storybook"
   },
   "dependencies": {
     "@types/node": "^14.0.27",
